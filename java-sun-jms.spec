@@ -6,12 +6,11 @@ Release:	1
 License:	restricted, non-distributable (Sun Binary Code License - see URL)
 Group:		Development/Languages/Java
 Source0:	%{name}-1_1-fr-apidocs.zip
-URL:		http://java.sun.com/products/jms/
+# NoSource0-md5: 11ca2cdc4706d02b372a17cbf33612f6
+URL:		http://java.sun.com/products/jms/docs.html
 NoSource:	0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_javalibdir	/usr/share/java
 
 %description
 Java Message Service.
@@ -31,22 +30,22 @@ Java Message Service documentation.
 Dokumentacja do JMS - serwisu komunikacyjnego do Javy.
 
 %prep
-%setup -q -n jms1.1
+%setup -q -n %{name}%{version}
 
 %build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_javalibdir}
+install -d $RPM_BUILD_ROOT%{_javadir}
 
-install lib/*.jar $RPM_BUILD_ROOT%{_javalibdir}
+install lib/*.jar $RPM_BUILD_ROOT%{_javadir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{_javalibdir}/*.jar
+%{_javadir}/*.jar
 
 %files doc
 %defattr(644,root,root,755)
