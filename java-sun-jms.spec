@@ -1,11 +1,11 @@
 Summary:	Java Message Service
 Summary(pl):	Serwis komunikacyjny do Javy
 Name:		jms
-Version:	1.0.2b
+Version:	1.1
 Release:	1
 License:	restricted, non-distributable (Sun Binary Code License - see URL)
 Group:		Development/Languages/Java
-Source0:	%{name}-1_0_2b.zip
+Source0:	%{name}-1_1-fr-apidocs.zip
 URL:		http://java.sun.com/products/jms/
 NoSource:	0
 BuildArch:	noarch
@@ -31,7 +31,7 @@ Java Message Service documentation.
 Dokumentacja do JMS - serwisu komunikacyjnego do Javy.
 
 %prep
-%setup -q -n jms1.0.2b
+%setup -q -n jms1.1
 
 %build
 
