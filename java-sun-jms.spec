@@ -3,10 +3,11 @@ Summary(pl):	Serwis komunikacyjny do Javy
 Name:		jms
 Version:	1.0.2b
 Release:	1
-License:	Sun Microsystems, Inc. Binary Code License
+License:	restricted, non-distributable (Sun Binary Code License - see URL)
 Group:		Development/Languages/Java
 Source0:	%{name}-1_0_2b.zip
 URL:		http://java.sun.com/products/jms/
+NoSource:	0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,6 +38,7 @@ Dokumentacja do JMS - serwisu komunikacyjnego do Javy.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_javalibdir}
+
 install lib/*.jar $RPM_BUILD_ROOT%{_javalibdir}
 
 %clean
