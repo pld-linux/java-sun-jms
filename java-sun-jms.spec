@@ -5,8 +5,6 @@ Version:	1.0.2b
 Release:	1
 License:	Sun Microsystems, Inc. Binary Code License
 Group:		Development/Languages/Java
-Group(de):	Entwicklung/Sprachen/Java
-Group(pl):	Programowanie/Jêzyki/Java
 Source0:	jms-1_0_2b.zip
 URL:		http://java.sun.com/products/jms/
 BuildArch:	noarch
@@ -24,8 +22,6 @@ Java Message Service - serwis komunikacyjny do Javy.
 Summary:	Java Message Service documentation
 Summary(pl):	Dokumentacja do serwisu komunikacyjnego Javy
 Group:		Development/Languages/Java
-Group(de):	Entwicklung/Sprachen/Java
-Group(pl):	Programowanie/Jêzyki/Java
 
 %description doc
 Java Message Service documentation.
