@@ -5,7 +5,7 @@ Version:	1.0.2b
 Release:	1
 License:	Sun Microsystems, Inc. Binary Code License
 Group:		Development/Languages/Java
-Source0:	jms-1_0_2b.zip
+Source0:	%{name}-1_0_2b.zip
 URL:		http://java.sun.com/products/jms/
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
