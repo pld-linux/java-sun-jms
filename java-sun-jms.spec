@@ -5,7 +5,7 @@ Version:	1.1
 Release:	1
 License:	restricted, non-distributable (Sun Binary Code License - see URL)
 Group:		Development/Languages/Java
-# download through froms from URL
+# download through forms from URL
 Source0:	%{name}-1_1-fr-apidocs.zip
 # NoSource0-md5: 11ca2cdc4706d02b372a17cbf33612f6
 URL:		http://java.sun.com/products/jms/docs.html
@@ -33,8 +33,6 @@ Dokumentacja do JMS - serwisu komunikacyjnego do Javy.
 
 %prep
 %setup -q -n %{name}%{version}
-
-%build
 
 %install
 rm -rf $RPM_BUILD_ROOT
