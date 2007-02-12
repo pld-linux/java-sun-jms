@@ -1,5 +1,5 @@
 Summary:	Java Message Service
-Summary(pl):	Serwis komunikacyjny do Javy
+Summary(pl.UTF-8):   Serwis komunikacyjny do Javy
 Name:		jms
 Version:	1.1
 Release:	1
@@ -17,18 +17,18 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Java Message Service.
 
-%description -l pl
+%description -l pl.UTF-8
 Java Message Service - serwis komunikacyjny do Javy.
 
 %package doc
 Summary:	Java Message Service documentation
-Summary(pl):	Dokumentacja do serwisu komunikacyjnego Javy
+Summary(pl.UTF-8):   Dokumentacja do serwisu komunikacyjnego Javy
 Group:		Development/Languages/Java
 
 %description doc
 Java Message Service documentation.
 
-%description doc -l pl
+%description doc -l pl.UTF-8
 Dokumentacja do JMS - serwisu komunikacyjnego do Javy.
 
 %prep
