@@ -8,8 +8,9 @@ Group:		Development/Languages/Java
 # download through forms from URL
 Source0:	%{name}-1_1-fr-apidocs.zip
 # NoSource0-md5: 11ca2cdc4706d02b372a17cbf33612f6
-URL:		http://java.sun.com/products/jms/docs.html
 NoSource:	0
+URL:		http://java.sun.com/products/jms/docs.html
+BuildRequires:	unzip
 Requires:	jre
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
